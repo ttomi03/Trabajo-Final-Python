@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./img/compras.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  </header>
+  <main>
+    <div class="container" id="app">
+      <div class="formulario-login">
+        <form  style="background-color:  rgb(233, 233, 233);;margin:10px auto ; width: 400px; padding: 20px;">
+          <h1>Login</h1>
+          <div class="mb-3">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario" v-model="usuario">
+          </div>
+          <div class="mb-3">
+            <label for="clave">Clave</label>
+            <input type="text" name="clave" id="clave" v-model="clave">
+          </div>        
+          <button type="button" class="btn btn-success" v-on:click="login()">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="./js/main.js"></script>
+  <script src="./js/barra.js"></script>
+  <script src="./js/footer.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="./js/usuarios.js"></script>
+</body>
+</html>

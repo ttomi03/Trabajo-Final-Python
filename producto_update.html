@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Modificar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="./img/compras.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <div class="container" id="app">
+      <form class="formulario-producto">
+        <h1>Modificar producto</h1>
+        <div class="mb-3">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" v-model="nombre">
+        </div>
+        <div class="mb-3">
+          <label for="precio">Precio</label>
+          <input type="number" name="precio" id="precio" v-model="precio">
+        </div>
+        <div class="mb-3">
+          <label for="stock">Stock</label>
+          <input type="number" name="stock" id="stock" v-model="stock">
+        </div>
+        <div class="mb-3">
+          <label for="imagen">Imagen</label>
+          <input type="text" name="imagen" id="imagen" v-model="imagen">
+          <img width="100" :src="imagen" alt="">
+        </div>
+        <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+      </form>
+    </div>
+  </main>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/producto_editar.js"></script>
+  <script src="./js/barra.js"></script>
+  <script src="./js/footer.js"></script>
+</body>
+</html>

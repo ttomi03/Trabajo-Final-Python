@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+    <link rel="shortcut icon" href="./img/compras.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="body2">
+        <div class="payment-container">
+            <form id="payment-form">
+                <h2 class="form-title">Formulario de Pago</h2>
+                <div class="form-row">
+                    <label for="cardholder-name" class="form-label">Nombre del titular</label>
+                    <input type="text" id="cardholder-name" class="form-input" placeholder="Nombre del titular" required>
+                </div>
+                <div class="form-row">
+                    <label for="card-number" class="form-label">Número de la tarjeta</label>
+                    <input type="text" id="card-number" class="form-input" placeholder="1234 5678 9012 3456" required>
+                </div>
+                <div class="form-row">
+                    <label for="expiry-date" class="form-label">Fecha de vencimiento</label>
+                    <input type="text" id="expiry-date" class="form-input" placeholder="MM/AA" required>
+                </div>
+                <div class="form-row">
+                    <label for="cvc" class="form-label">CVC</label>
+                    <input type="text" id="cvc" class="form-input" placeholder="CVC" required>
+                </div>
+                <a href="./compra.html" class="btn-2" onclick="validateForm2(event)">PAGAR</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/barra.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/validacion.js"></script>
+</body>
+</html>

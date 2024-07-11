@@ -1,0 +1,113 @@
+/* Estilos para la tabla */
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Asegura que los bordes se fusionen correctamente */
+}
+
+.table thead th {
+    background-color: #f8f9fa; /* Color de fondo del encabezado de la tabla */
+    color: #343a40;            /* Color del texto del encabezado */
+    text-align: center;        /* Alineación centrada del texto */
+    border: 1px solid #dee2e6; /* Bordes del encabezado */
+}
+
+.table tbody td {
+    text-align: center;        /* Alineación centrada del texto */
+    vertical-align: middle;    /* Alineación vertical centrada */
+    color: #000;               /* Color del texto (asegurando que sea visible) */
+    padding: 10px;             /* Espaciado interior de las celdas */
+    border: 1px solid #dee2e6; /* Bordes de las celdas */
+}
+
+/* Estilos para el botón "Nuevo" */
+.btn-primary {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none; /* Quitar subrayado */
+    cursor: pointer;
+    background-color: #000000; /* Color de fondo similar al botón btn-2 */
+    color: #fff; /* Color de texto */
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #393b3d; /* Cambio de color al pasar el mouse */
+    text-decoration: none; /* Mantener sin subrayado */
+}
+
+.btn-primary:focus {
+    outline: none; /* Quitar el contorno al enfocar */
+    box-shadow: 0 0 0 0.25rem rgba(66, 67, 68, 0.5); /* Efecto de enfoque */
+}
+
+/* Estilos para la imagen de los productos */
+.table img {
+    border-radius: 5px;       /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para los botones de acción */
+.btn-primary, .btn-danger {
+    margin: 5px; /* Margen para separación entre botones */
+}
+
+/* Estilos de la sección de carga */
+.spinner-border {
+    width: 3rem;  /* Ancho del spinner */
+    height: 3rem; /* Alto del spinner */
+    margin-right: 10px; /* Margen a la derecha */
+}
+.table-responsive
+{
+    margin-bottom: 70px;
+}
+.section-loading p {
+    font-size: 1.2rem; /* Tamaño de fuente */
+    font-weight: bold; /* Peso de la fuente */
+}
+
+/* Estilos para mensajes de error */
+#error-message {
+    color: red;   /* Color del texto */
+    font-weight: bold; /* Peso de la fuente */
+}
+
+@media screen and (max-width: 480px) {
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .table {
+        width: 100%;
+        margin-bottom: 1rem;
+        background-color: transparent;
+    }
+
+    .table-bordered {
+        border: 1px solid #dee2e6;
+    }
+
+    .table-bordered th,
+    .table-bordered td {
+        border: 1px solid #dee2e6;
+        padding: 0.75rem;
+        vertical-align: top;
+    }
+
+    .table-bordered thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+    }
+
+    .btn-nuevo
+    {
+        margin-top: 40px;
+
+    }
+}

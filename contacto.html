@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="./img/compras.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body>
+        <div class="container-form">
+            <div class="info-form">
+                <H2>Contactanos</H2>
+                <p>¿Quieres ponerte en contacto? Envíame un mensaje con el siguiente formulario!</p>
+                <a href="#"><i class="fa fa-phone"></i>1135432384</a>
+                <a href="#"><i class="fa fa-envelope"></i> compraventa@gmail.com</a>
+                <a href="#"><i class="fa fa-map-marked"></i> Lomas de Zamora, Argentina</a>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016888186402!2d-58.38414532488473!3d-34.60373445749809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1717095336960!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+    
+            <form action="#" autocomplete="off" onsubmit="return validarFormulario()">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="campo">
+                <input type="email" id="email" name="email" placeholder="Email" class="campo">
+                <textarea id="mensaje" name="mensaje" placeholder="Ingrese su consulta"></textarea>
+                <select id="motivo" name="motivo" class="campo">
+                    <option value="consulta">Consulta</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="otros">Otros</option>
+                </select>
+                <label for="suscripcion" class="checkbox-label">
+                    <input type="checkbox" id="suscripcion" name="suscripcion" value="suscripcion">
+                    ¿Has comprado algo anteriormente?
+                </label>
+                <a href="./gracias.html" class="btn-enviar" onclick="validateForm(event)">Enviar</a>
+            </form>
+        </div>
+
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <script src="./js/validacion.js"></script>
+    </body>
+
+    <script src="./js/barra.js"></script>
+    <script src="./js/footer.js"></script>
+</body>
+</html>

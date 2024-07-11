@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="shortcut icon" href="./img/compras.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <main class="products container" id="lista-1">
+            <div class="conteiner-item">
+                <div v-for="producto in productos" :key="producto.id" class="contenedor-foto">
+                    <div class="item">
+                        <img :src="producto.imagen" :alt="">
+                        <div class="info-product">
+                            <h2>{{producto.nombre}}</h2>
+                            <p class="precio">${{producto.precio}}</p>
+                            <p v-if="isAdmin" class="description">{{producto.stock}}</p>
+                            <a href="#" class="agregar-carrito btn-2" :data-id="producto.id">Agregar al carrito</a>
+                            <a v-if="isAdmin" class="btn btn-2" :href="'producto_update.html?id='+ producto.id">Editar</a>
+                            <button v-if="isAdmin" type="button" class="btn btn-2" v-on:click="eliminar(producto.id)">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <div class="btn-nuevo-container">
+            <a class="btn-nuevo btn-2" href="producto_nuevo.html">Nuevo</a>
+        </div>
+        <div class="btn-nuevo-container7">
+            <a v-if="isAdmin" class="btn-nuevo btn-2" href="producto_tabla.html">Vista en tabla</a>
+        </div>
+        
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/barra.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/new.js"></script>
+</body>
+
+</html>
